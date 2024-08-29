@@ -1,0 +1,197 @@
+body{
+    justify-content: center;
+    align-items: center;
+}
+
+/* Retro/Vaporwave Container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(135deg, #ff00ff, #00ffff);
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: 500px;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 255, 255, 0.5);
+    transition: all 0.3s ease;
+    margin-left: 100px;
+}
+
+.container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.5), 0 0 25px rgba(0, 255, 255, 0.7);
+}
+
+/* Retro/Vaporwave Content Box */
+#con {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    background: linear-gradient(135deg, #ff00ff, #00ffff);
+    padding: 20px;
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2), 0 0 15px rgba(0, 255, 255, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#con:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 255, 255, 0.7);
+}
+
+/* Icon style - Retro Gradient */
+.fa-photo-film {
+    font-size: 150px;
+    margin-bottom: 20px;
+    color: #fff;
+    background: linear-gradient(45deg, #ff7e5f, #feb47b);
+    padding: 15px;
+    border-radius: 20px;
+    transition: transform 0.3s ease, color 0.3s ease, background 0.3s ease;
+}
+
+.fa-photo-film:hover {
+    transform: scale(1.1);
+    color: #ff6347;
+    background: linear-gradient(45deg, #feb47b, #ff7e5f);
+}
+
+/* Container1 - Retro Gradient */
+.container1 {
+    display: block;
+    width: 700px;
+    margin-top: 50px;
+    margin-left: 20px;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin-left: 100px;
+}
+
+.container1:hover {
+    background: linear-gradient(135deg, #feb47b, #ff7e5f);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4);
+}
+
+
+/* Image styling */
+#img1 img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #000;
+}
+
+p #i1 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid black;
+    transition: transform 0.3s ease;
+}
+
+p #i1:hover {
+    transform: scale(1.1);
+}
+
+p #i2 {
+    width: 70px;
+    height: 70px;
+    border-radius: 7%;
+    border: 3px solid #000;
+}
+
+/* Inline image container */
+.inline-images {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.inline-images img {
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+
+.inline-images img:hover {
+    transform: scale(1.1);
+}
+
+/* Body background and animation */
+body {
+    height: 100vh;
+    background: linear-gradient(to left top, #f52144, #1a501a, #424141);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Background animation keyframes */
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+/* Adding smooth transitions to all elements */
+* {
+    transition: all 0.3s ease;
+}
+
+/* Additional Hover Effects */
+.container:hover .fa-photo-film {
+    color: #ffe500;
+}
+
+.inline-images img:hover {
+    transform: rotate(10deg) scale(1.2);
+    border: 2px solid #ff6347;
+}
+@media(max-width:400px){
+    
+    #con {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        background: linear-gradient(135deg, #ff00ff, #00ffff);
+        padding: 20px;
+        width: 150px;
+        border-radius: 15px;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2), 0 0 15px rgba(0, 255, 255, 0.5);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        margin-left: 20px;
+        margin-top: -70px;
+        font-size: 10px;
+    }
+    .container1{
+        display: block;
+    width: 700px;
+    margin-top: 50px;
+    margin-left: 20px;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin-left: 100px;
+    }
+}

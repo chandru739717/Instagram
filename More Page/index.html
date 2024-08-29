@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="offcanvas offcanvas-end show" id="demo" style="background: linear-gradient(to left top, pink, lightyellow);">
+        <div class="offcanvas-header" style="border-bottom: 2px solid black;">
+            <h4 class="offcanvas-title" style="color: brown;">Settings and activity</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body"  id="body1">
+            <a href="../Login Page/index.html"  style="text-decoration: none;"><p style="color:red;border-bottom: 2px solid black;">Logout</p></a>
+            <a href="../Signup Page/index.html" style="text-decoration: none;"><p style="color:blue;border-bottom: 2px solid black;">Add an Account</p></a>
+            <p class="lan" id="drop" style=" cursor: pointer; display: flex;justify-content: space-around;margin-bottom: 1rem;border-bottom: 2px solid black;"> Language<i class="fa-solid fa-greater-than " id="ic" style="margin-left: auto;"></i></p>
+            <div id="dro" class="ms-3" style="display: none;background: linear-gradient(to right top,rgb(245, 126, 145),rgb(206, 82, 82)); width: 100px;">
+            <p class="lan"  style=" cursor: pointer; display: flex;"> Tamil</p>
+            <p class="lan"  style=" cursor: pointer; display: flex;"> English</p>
+            <p class="lan"  style=" cursor: pointer; display: flex;"> Korean</p>
+            <p class="lan"  style=" cursor: pointer; display: flex;"> kanada</p>
+            <p class="lan"  style=" cursor: pointer; display: flex"> Spanish</p>
+            <p class="lan"  style=" cursor: pointer; display: flex;"> Hindi</p>
+        </div>
+            <p class="lan" id="drop1" style="cursor: pointer; display: flex;justify-content: space-between;margin-bottom: 1rem;border-bottom: 2px solid black;">Device Settings<i class="fa-solid fa-greater-than " id="ic"style="margin-left: auto;"></i></p>
+            <div id="dro1" class="ms-3" style="display: none;background: linear-gradient(to right top,rgb(245, 126, 145),rgb(206, 82, 82)); width: 100px;">
+                <p class="lan"  style=" cursor: pointer; display: flex;">Camera</p>
+                <p class="lan"  style=" cursor: pointer; display: flex;"> Contacts</p>
+                <p class="lan"  style=" cursor: pointer; display: flex;"> Microphone</p>
+                <p class="lan"  style=" cursor: pointer; display: flex;"> Location</p>
+                <p class="lan"  style=" cursor: pointer; display: flex"> Notifications</p>
+                <p class="lan"  style=" cursor: pointer; display: flex;">Photos & Videos</p>
+            </div>
+        </div>
+    </div>
+    <div class="img1" style=" margin-left: 280px;  ">
+        <img src="1.png" alt="">
+    </div>
+    <div class="container " id="con">
+        <div><a href="../Home Page/index.html" style="text-decoration: none; color: black;"><i class="fa-solid fa-house"></i><span class="m-3">Home</span></a></div>
+        <div><a href="../Search Page/index.html" style="text-decoration: none;color: black;"><i class="fa-solid fa-magnifying-glass"></i><span class="m-3">Search</span></a></div>
+        <div><a href="../Explore Page/index.html"style="text-decoration: none;color: black;"><i class="fa-solid fa-compass"></i><span class="m-3">Explore</span></a></div>
+        <!-- <div><a href="/Reels Page/index.html"style="text-decoration: none;color: black;"><i class="fa-solid fa-play"></i><span class="m-3">Reels</span></a></div> -->
+        <div><a href="#demo1"style="text-decoration: none;color: black;" data-bs-target="#demo1" data-bs-toggle="offcanvas"><i class="fa-regular fa-heart"></i><span class="m-3">Notification</span></a></div>
+        <div><a href="#demo2"style="text-decoration: none;color: black;" data-bs-target="#demo2" data-bs-toggle="offcanvas"><i class="fa-solid fa-paper-plane"></i><span class="m-3">Messages</span></a></div>
+        <div><a href="../Upload Page/index.html"style="text-decoration: none;color: black;"><i class="fa-regular fa-square-plus"></i><span class="m-3" >Create</span></a></div>
+        <div class="img"><a href="../Your Account Page/index.html" style="text-decoration: none; color: black; display: flex; align-items: center;"><span id="img1"><img src="1.png" alt="" ></span><p class="m-3" style="margin: 0;">Profile</p></a></div>
+        <div><a href="../More Page/index.html"style="text-decoration: none;color: black;"><i class="fa-solid fa-ellipsis"></i><span class="m-3">More</span></a></div>
+    </div>
+
+    <div class="offcanvas  offcanvas-end " id="demo1">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Likes and Notifications</h5>
+            <a href="" style="text-decoration: none; margin-left: 170px;"><button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button></a>
+        </div>
+        <div class="offcanvas-body">
+            <p class="inline-images"><img src="1.png" id="i1"><span class="m-1">Sample_Post Liked Your Photo.</span><img src="4.jpeg" id="i2"></p>
+            <p class="inline-images"><img src="5.jpeg" id="i1"><span class="m-1">Vinu Started Following You.</span><button class="btn btn-primary">Follow</button></p>
+            <p class="inline-images"><img src="6.jpeg" id="i1"><span class="m-2">Sample_Post Comment for Your Photo.</span><img src="4.jpeg" id="i2" class="mt-2"></p>
+            <p class="inline-images"><img src="1.png" id="i1"><span class="m-1">Sample_Post and others liked Your Photo.</span><img src="4.jpeg" id="i2"></p>
+        </div>
+    </div>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="demo2" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Messages</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <!-- User Images -->
+            <div class="d-flex flex-wrap mb-3">
+                <img src="1.jpeg" alt="User 1" class="rounded-circle me-2" style="width: 40px; height: 40px;" data-song="song1.mp3">
+                <img src="2.jpeg" alt="User 2" class="rounded-circle me-2" style="width: 40px; height: 40px;" data-song="song2.mp3">
+                <img src="3.jpeg" alt="User 3" class="rounded-circle me-2" style="width: 40px; height: 40px;" data-song="song3.mp3">
+            </div>
+        
+    
+            <!-- Messages and Requests -->
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h6 class="mb-0">Messages</h6>
+                <a href="#" class="btn btn-link p-0">Request</a>
+            </div>
+    
+            <!-- Message List -->
+            <ul class="list-unstyled">
+                <li class="mb-2">
+                    <a href="#" class="d-flex align-items-center text-decoration-none">
+                        <img src="6.jpeg" alt="Virat Kohli" class="rounded-circle me-2" style="width: 40px; height: 40px;">
+                        <b>Virat Kohli</b>
+                    </a>
+                </li>
+                <li class="mb-2">
+                    <a href="#" class="d-flex align-items-center text-decoration-none">
+                        <img src="5.jpeg" alt="Bhuvanesh" class="rounded-circle me-2" style="width: 40px; height: 40px;">
+                        <b>Bhuvanesh</b>
+                    </a>
+                </li>
+                <li class="mb-2">
+                    <a href="#" class="d-flex align-items-center text-decoration-none">
+                        <img src="2.jpeg" alt="Suresh Raina" class="rounded-circle me-2" style="width: 40px; height: 40px;">
+                        <b>Suresh Raina</b>
+                    </a>
+                </li>
+                <li class="mb-2">
+                    <a href="#" class="d-flex align-items-center text-decoration-none">
+                        <img src="1.jpeg" alt="Hardik Pandya" class="rounded-circle me-2" style="width: 40px; height: 40px;">
+                        <b>Hardik Pandya</b>
+                    </a>
+                </li>
+                <li class="mb-2">
+                    <a href="#" class="d-flex align-items-center text-decoration-none">
+                        <img src="2.jpeg" alt="Rohit Sharma" class="rounded-circle me-2" style="width: 40px; height: 40px;">
+                        <b>Rohit Sharma</b>
+                    </a>
+                </li>
+                <li class="mb-2">
+                    <a href="#" class="d-flex align-items-center text-decoration-none">
+                        <img src="5.jpeg" alt="Chennai IPL" class="rounded-circle me-2" style="width: 40px; height: 40px;">
+                        <b>Chennai IPL</b>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="bootstrap.bundle.js"></script>
+    <script src="js/all.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+body{
+    height: 100vh;
+        background: linear-gradient(to left top, rgb(241, 152, 212),rgb(100, 235, 167),rgb(253, 254, 255));
+        background-size: 400% 400%;
+        animation: gradientBG 15s ease infinite;
+    }
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container {
+    max-width: 400px;
+    flex-grow: 1;
+    border: 4px solid rgb(255, 4, 4);
+    height: 500px;
+    align-items: center;
+    text-align: center;
+    border-radius: 8%;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    margin-left: 150px;
+}
+#play, #micro {
+    display: inline-block;
+    width: auto; 
+    border: 1px solid #74C0FC; 
+    padding: 5px 10px; 
+    border-radius: 5px;
+    margin: 5px; 
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #000;
+}
+
+.divider::before {
+    margin-right: 10px;
+}
+
+.divider::after {
+    margin-left: 10px;
+}
+#eye{
+    display: none;
+}
+
+form{
+    background: linear-gradient(to left top,orange,silver);
+    border-radius: 10px;
+    height: 183px;
+}
+#form,#pass{
+    border-radius: 10px;
+    border: none;
+}

@@ -1,0 +1,180 @@
+body {
+    background: linear-gradient(to left top, rgb(241, 152, 212), rgb(100, 235, 167), rgb(253, 254, 255));
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.contain {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1000px;
+    background-color: rgba(173, 118, 118, 0.8);
+    padding: 20px;
+    margin: 40px 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    margin-right: 290px;
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: #fff;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.card img, .card video {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.1);
+}
+
+.card .fa-heart, .card .fa-comment {
+    position: absolute;
+    bottom: 15px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 32px;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.card .fa-heart {
+    left: 15px;
+}
+
+.card .fa-comment {
+    right: 15px;
+}
+
+.card:hover .fa-heart, .card:hover .fa-comment {
+    opacity: 1;
+    transform: scale(1.3);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    border: 3px solid rgb(238, 255, 0);
+    border-radius: 15px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: fixed; /* Fixed position to keep it on the right side */
+    right: 0; /* Align to the right edge */
+    top: 40px; /* Adjust top spacing if needed */
+    width: 250px; /* Adjusted width for smaller size */
+    margin-right: 20px;
+}
+
+.container div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.img {
+    display: flex;
+    align-items: center;
+}
+
+.img p {
+    margin: 0;
+    font-weight: bold;
+}
+
+#img1 img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #333;
+}
+
+#i1 {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid #333;
+}
+
+#i2 {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    border: 2px solid #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.inline-images {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.inline-images img {
+    border-radius: 50%;
+    border: 2px solid #333;
+}
+
+.offcanvas {
+    background-color: #ffffff;
+    border-left: 1px solid #dee2e6;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.offcanvas-header {
+    border-bottom: 1px solid #dee2e6;
+    padding-bottom: 15px;
+    background-color: #f1f1f1;
+}
+
+.offcanvas-body {
+    padding-top: 15px;
+}
+
+.offcanvas-body p {
+    margin-bottom: 15px;
+}
+@media(max-width:400px){
+    .container{
+        width:150px;
+        font-size: 10px;
+        margin-left: 40px !important;
+        margin-top: 90px;
+    }
+    .contain{
+        width: 400px    !important;
+        margin-left: 133px !important;
+    }
+    .contain .row .card{
+        width: 150px !important;
+    }
+}

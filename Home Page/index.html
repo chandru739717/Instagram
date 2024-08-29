@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-layout">
+        <div class="container m-5" id="con1">
+            <div id="con2" class="m-2">
+                <div class="header"><h1 style="color: aqua">Stories</h1></div>
+                <div class="images">
+                    <div class="profile"><img src="2.jpeg" alt=""></div>
+                    <div class="profile"><img src="3.jpeg" alt=""></div>
+                    <div class="profile"><img src="4.jpeg" alt=""></div>
+                    <div class="profile"><img src="5.jpeg" alt=""></div>
+                    <div class="profile"><img src="6.jpeg" alt=""></div>
+                </div>
+            </div>
+            
+            <div class="post m-5">
+                <div class="post-header">
+                    <img src="6.jpeg" alt="Profile Picture" height="20px" >
+                    <span class="ms-5">Sample_Post</span>
+                    <span style="margin-left:auto;">5h</span>
+                </div>
+                <div class="post-image m-3">
+                    <img src="1.png" alt="Post Image">
+                </div>
+                <div class="post-footer">
+                    <div class="icon1">
+                        <i class="fa-regular fa-heart" data-bs-target="#demo3" data-bs-toggle="offcanvas"></i>
+                        <i class="fa-regular fa-comment ms-3"data-bs-target="#demo4" data-bs-toggle="offcanvas"></i>
+                        <i class="fa-solid fa-paper-plane ms-3"></i>
+                    </div>
+                    <div class="likes">
+                        <span>Liked by shree.2309 and others</span>
+                    </div>
+                    <div class="caption">
+                        <span><strong>sample_post</strong></span>
+                        <span>Sample Post Description</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container1 ">
+            <div><a href="../Home Page/index.html" style="text-decoration: none; color: white;"><i class="fa-solid fa-house"></i><span class="m-3">Home</span></a></div>
+            <div><a href="../Search Page/index.html" style="text-decoration: none;color: white;"><i class="fa-solid fa-magnifying-glass"></i><span class="m-3">Search</span></a></div>
+            <div><a href="../Explore Page/index.html" style="text-decoration: none;color: white;"><i class="fa-solid fa-compass"></i><span class="m-3">Explore</span></a></div>
+            <!-- <div><a href="/Reels Page/index.html" style="text-decoration: none;color: white;"><i class="fa-solid fa-play"></i><span class="m-3">Reels</span></a></div> -->
+            <div><a href="#demo2" style="text-decoration: none;color: white;" data-bs-target="#demo2" data-bs-toggle="offcanvas"><i class="fa-solid fa-paper-plane"></i><span class="m-3">Messages</span></a></div>
+            <div><a href="#demo" style="text-decoration: none;color: white;" data-bs-target="#demo"data-bs-toggle="offcanvas"><i class="fa-regular fa-heart"></i><span class="m-3">Notification</span></a></div>
+            <div><a href="../Upload Page/index.html" style="text-decoration: none;color: white;"><i class="fa-regular fa-square-plus"></i><span class="m-3">Create</span></a></div>
+            <div class="img"><a href="../Your Account Page/index.html" style="text-decoration: none; color: white; display: flex; align-items: center;"><span id="img1"><img src="1.png" alt=""></span><p class="m-3" style="margin: 0;">Profile</p></a></div>
+            <div><a href="../More Page/index.html" style="text-decoration: none;color: white;"><i class="fa-solid fa-ellipsis"></i><span class="m-3">More</span></a></div>
+        </div>
+    </div>
+
+    <div class="offcanvas offcanvas-end" id="demo">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Likes and Notifications</h5>
+            <a href="../Home Page/index.html" style="text-decoration: none; margin-left: 170px;"><button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button></a>
+        </div>
+        <div class="offcanvas-body">
+            <p class="inline-images"><img src="1.jpeg" id="i1"><span class="m-1"style="color: black;">Sample_Post Liked Your Photo.</span><img src="4.jpeg" id="i2"></p>
+            <p class="inline-images"><img src="5.jpeg" id="i1"><span class="m-1"style="color: black;">Vinu Started Following You.</span><button class="btn btn-primary">Follow</button></p>
+            <p class="inline-images"><img src="6.jpeg" id="i1"><span class="m-2"style="color: black;">Sample_Post Commented on Your Photo.</span><img src="4.jpeg" id="i2" class="mt-2"></p>
+            <p class="inline-images"><img src="1.png" id="i1"><span class="m-1"style="color: black;">Sample_Post and others liked Your Photo.</span><img src="4.jpeg" id="i2"></p>
+        </div>
+    </div>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="demo2" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Messages</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <!-- User Images -->
+            <div class="d-flex flex-wrap mb-3">
+                <img src="1.jpeg" alt="User 1" class="rounded-circle me-2" style="width: 40px; height: 40px;" data-song="song1.mp3">
+                <img src="2.jpeg" alt="User 2" class="rounded-circle me-2" style="width: 40px; height: 40px;" data-song="song2.mp3">
+                <img src="3.jpeg" alt="User 3" class="rounded-circle me-2" style="width: 40px; height: 40px;" data-song="song3.mp3">
+            </div>
+        
+    
+            <!-- Messages and Requests -->
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h6 class="mb-0">Messages</h6>
+                <a href="#" class="btn btn-link p-0">Request</a>
+            </div>
+    
+            <!-- Message List -->
+            <ul class="list-unstyled">
+                <li class="mb-2">
+                    <a href="#" class="d-flex align-items-center text-decoration-none">
+                        <img src="6.jpeg" alt="Virat Kohli" class="rounded-circle me-2" style="width: 40px; height: 40px;">
+                        <b>Virat Kohli</b>
+                    </a>
+                </li>
+                <li class="mb-2">
+                    <a href="#" class="d-flex align-items-center text-decoration-none">
+                        <img src="5.jpeg" alt="Bhuvanesh" class="rounded-circle me-2" style="width: 40px; height: 40px;">
+                        <b>Bhuvanesh</b>
+                    </a>
+                </li>
+                <li class="mb-2">
+                    <a href="#" class="d-flex align-items-center text-decoration-none">
+                        <img src="2.jpeg" alt="Suresh Raina" class="rounded-circle me-2" style="width: 40px; height: 40px;">
+                        <b>Suresh Raina</b>
+                    </a>
+                </li>
+                <li class="mb-2">
+                    <a href="#" class="d-flex align-items-center text-decoration-none">
+                        <img src="1.jpeg" alt="Hardik Pandya" class="rounded-circle me-2" style="width: 40px; height: 40px;">
+                        <b>Hardik Pandya</b>
+                    </a>
+                </li>
+                <li class="mb-2">
+                    <a href="#" class="d-flex align-items-center text-decoration-none">
+                        <img src="2.jpeg" alt="Rohit Sharma" class="rounded-circle me-2" style="width: 40px; height: 40px;">
+                        <b>Rohit Sharma</b>
+                    </a>
+                </li>
+                <li class="mb-2">
+                    <a href="#" class="d-flex align-items-center text-decoration-none">
+                        <img src="5.jpeg" alt="Chennai IPL" class="rounded-circle me-2" style="width: 40px; height: 40px;">
+                        <b>Chennai IPL</b>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="offcanvas offcanvas-start" id="demo3">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Plays and Reactions</h5>
+            <a href="/Home Page/index.html" style="text-decoration: none; margin-left: 170px;"><button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button></a>
+        </div>
+        <div class="offcanvas-body">
+            
+        </div>
+    </div>
+    <div class="offcanvas offcanvas-start" id="demo4">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Comments</h5>
+            <a href="/Home Page/index.html" style="text-decoration: none; margin-left: 170px;"><button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button></a>
+        </div>
+        <div class="offcanvas-body">
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="bootstrap.bundle.js"></script>
+    <script src="js/all.min.js"></script>
+</body>
+</html>

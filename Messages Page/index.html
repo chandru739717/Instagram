@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Messages</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <!-- User Images -->
+            <div class="d-flex flex-wrap mb-3">
+                <img src="1.jpeg" alt="User 1" class="rounded-circle me-2" style="width: 40px; height: 40px;" data-song="song1.mp3">
+                <img src="virat.jpeg" alt="User 2" class="rounded-circle me-2" style="width: 40px; height: 40px;" data-song="song2.mp3">
+                <img src="rohit.jpeg" alt="User 3" class="rounded-circle me-2" style="width: 40px; height: 40px;" data-song="song3.mp3">
+            </div>
+        
+    
+            <!-- Messages and Requests -->
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h6 class="mb-0">Messages</h6>
+                <a href="#" class="btn btn-link p-0">Request</a>
+            </div>
+    
+            <!-- Message List -->
+            <ul class="list-unstyled">
+                <li class="mb-2">
+                    <a href="#" class="d-flex align-items-center text-decoration-none">
+                        <img src="virat.jpeg" alt="Virat Kohli" class="rounded-circle me-2" style="width: 40px; height: 40px;">
+                        <b>Virat Kohli</b>
+                    </a>
+                </li>
+                <li class="mb-2">
+                    <a href="#" class="d-flex align-items-center text-decoration-none">
+                        <img src="bhuviDP.jpg" alt="Bhuvanesh" class="rounded-circle me-2" style="width: 40px; height: 40px;">
+                        <b>Bhuvanesh</b>
+                    </a>
+                </li>
+                <li class="mb-2">
+                    <a href="#" class="d-flex align-items-center text-decoration-none">
+                        <img src="Raina.jpeg" alt="Suresh Raina" class="rounded-circle me-2" style="width: 40px; height: 40px;">
+                        <b>Suresh Raina</b>
+                    </a>
+                </li>
+                <li class="mb-2">
+                    <a href="#" class="d-flex align-items-center text-decoration-none">
+                        <img src="Pandya.jpeg" alt="Hardik Pandya" class="rounded-circle me-2" style="width: 40px; height: 40px;">
+                        <b>Hardik Pandya</b>
+                    </a>
+                </li>
+                <li class="mb-2">
+                    <a href="#" class="d-flex align-items-center text-decoration-none">
+                        <img src="rohit.jpeg" alt="Rohit Sharma" class="rounded-circle me-2" style="width: 40px; height: 40px;">
+                        <b>Rohit Sharma</b>
+                    </a>
+                </li>
+                <li class="mb-2">
+                    <a href="#" class="d-flex align-items-center text-decoration-none">
+                        <img src="csk.jpeg" alt="Chennai IPL" class="rounded-circle me-2" style="width: 40px; height: 40px;">
+                        <b>Chennai IPL</b>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <a href="#" class="menu-item" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+        <i class="fab fa-facebook-messenger" aria-hidden="true"></i> Messages
+    </a>
+    <div><a href="#demo"style="text-decoration: none;color: black;" data-bs-target="#demo" data-bs-toggle="offcanvas"><i class="fa-regular fa-heart"></i><span class="m-3">Notification</span></a></div>
+
+    <div class="offcanvas  offcanvas-end " id="demo">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Likes and Notifications</h5>
+            <a href="" style="text-decoration: none; margin-left: 170px;"><button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button></a>
+        </div>
+        <div class="offcanvas-body">
+            <p class="inline-images"><img src="1.png" id="i1"><span class="m-1">Sample_Post Liked Your Photo.</span><img src="4.jpeg" id="i2"></p>
+            <p class="inline-images"><img src="5.jpeg" id="i1"><span class="m-1">Vinu Started Following You.</span><button class="btn btn-primary">Follow</button></p>
+            <p class="inline-images"><img src="6.jpeg" id="i1"><span class="m-2">Sample_Post Comment for Your Photo.</span><img src="4.jpeg" id="i2" class="mt-2"></p>
+            <p class="inline-images"><img src="1.png" id="i1"><span class="m-1">Sample_Post and others liked Your Photo.</span><img src="4.jpeg" id="i2"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="bootstrap.bundle.js"></script>
+    <script src="js/all.min.js"></script>
+</body>
+</html>

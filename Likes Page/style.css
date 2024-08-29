@@ -1,0 +1,42 @@
+body {
+    height: 100vh;    
+    background: linear-gradient(to left top, rgb(241, 152, 212),rgb(100, 235, 167),rgb(253, 254, 255));
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+0% {
+    background-position: 0% 0%;
+}
+50% {
+    background-position: 100% 100%;
+}
+100% {
+    background-position: 0% 0%;
+}
+}
+p #i1{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid black;
+}
+p #i2{
+width: 70px;
+height: 70px;
+border-radius: 7%;
+
+}
+span{
+    display: block;
+    margin-top: 10px;
+}
+.inline-images {
+    display: flex;
+    align-items: center;
+}
+.inline-images img {
+    margin-right: 10px;
+}
